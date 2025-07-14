@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anishka's Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Meta Tags -->
+  <meta name="description" content="Anishka Jain - CodSoft Internship Landing Page" />
+  <meta name="author" content="Anishka Jain" />
+  <meta property="og:title" content="Anishka's Web Design" />
+  <meta property="og:image" content="images/hero.jpg" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">AnishkaDesigns</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Banner Image" class="hero-image" />
+    <div class="hero-content">
+      <h1>Welcome to My Creative Space</h1>
+      <p>Your ideas deserve a beautiful online presence.</p>
+      <a href="#services" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="images/profile.jpg" alt="Anishka Jain" class="profile-img" />
+    <p>Hi, I'm <strong>Anishka Jain</strong>, a passionate web developer who loves creating modern and user-friendly websites. This landing page is a project for my CodSoft Internship.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>What I Offer</h2>
+    <div class="service-boxes">
+      <div class="service-box">
+        <img src="images/responsive.jpg" alt="Responsive Design" class="service-img" />
+        <h3>Responsive Design</h3>
+        <p>Websites that look great on all devices—from desktop to mobile.</p>
+      </div>
+      <div class="service-box">
+        <img src="images/code.jpg" alt="Clean Code" class="service-img" />
+        <h3>Clean Code</h3>
+        <p>Structured and readable HTML and CSS—following best practices.</p>
+      </div>
+      <div class="service-box">
+        <img src="images/layout.jpg" alt="Creative Layouts" class="service-img" />
+        <h3>Creative Layouts</h3>
+        <p>Modern layouts that bring your idea to life beautifully.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email:
+      <a href="#" onclick="this.href='mailto:' + 'anishkaj60' + '@' + 'gmail.com'; return false;">
+        anishkaj60@gmail.com
+      </a>
+    </p>
+    <p>Let's connect and create something amazing!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Anishka Jain. All rights reserved.</p>
+  </footer>
+
+  <!-- Auto year script -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
